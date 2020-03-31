@@ -1,0 +1,183 @@
+body{
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    background-color:#06c0ed;
+    padding:10px;
+    color:#FFFFFF;
+}
+
+.doggyGram-icon{
+    width:60px;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 10px;
+}
+
+
+.header-title {
+    display: flex;
+    align-self: center;
+}
+.header-titleLetters{
+    padding-left:10px;
+}
+.nav-list *{
+    display:inline-block;
+}
+.nav-list li{
+    margin:0px 10px;
+    list-style: none;
+    font-weight: 600;
+
+}
+.contact-link a{
+    border:1px solid #FFFFFF;
+    color:#FFFFFF;
+    border-radius: 10px;
+    padding:10px;
+    height:inherit;
+    transition-duration: .5s;
+}
+.contact-link a:hover{
+    font-size:20px;
+    padding:6px;
+    box-sizing: border-box;
+}
+.nav-list li a{
+    color:#FFFFFF;
+    text-decoration:none;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.post{
+    border-radius:5px;
+    padding:10px;
+    width:400px;
+    box-sizing: border-box;
+    margin:10px 0px;
+    background-color:#F6F6F6;
+    box-shadow: 5px 5px 10px;
+
+}
+
+
+.post-dataProfile{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.post-imageProfile{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+}
+
+
+.post-datePost h3{
+    display: inline-block;
+}
+
+.post-containerImagePost{
+    width:300px;
+    height:400px;
+
+}
+.post-imagePost{
+    border-radius:20px;
+    box-shadow: 5px 5px 5px;
+}
+
+.btn-refresh{
+    border:0;
+    padding:10px 20px;
+    color:#FFFFFF;
+    background-color:#12a100;
+    font-weight: 600;
+    cursor: pointer;
+    font-size:20px;
+    transition-duration:.5s;
+    border-radius:5px;
+    margin-top:30px;
+
+}
+
+.btn-refresh:hover{
+    transform: translateY(-20%);
+    box-shadow:3px 5px 5px #000000;
+}
+
+.footer{
+    display:flex;
+    background-color:#06c0ed;
+    width:100%;
+    justify-content: space-around;
+    color:#FFFFFF;
+}
+.contact a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.facebook-link,
+.github-link{
+    border:1px solid #FFFFFF;
+    padding:10px;
+    border-radius:10px;
+    font-weight:600px;
+    transition-duration: .5s;
+}
+
+.facebook-link:hover,
+.github-link:hover{
+    color:#000000;
+    border-color:#000000;
+}
+
+.facebook-icon,
+.github-icon{
+    padding:0;
+    margin:0;
+    width:30px;
+    vertical-align: middle;
+    margin-right:2px;
+}
+
+.photo{
+    width:80px;
+    border:3px solid #000000;
+    border-radius:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s
