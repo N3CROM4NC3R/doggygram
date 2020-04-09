@@ -1,5 +1,41 @@
-body{
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rvphlo');
+  src:  url('../fonts/icomoon.eot?rvphlo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rvphlo') format('truetype'),
+    url('../fonts/icomoon.woff?rvphlo') format('woff'),
+    url('../fonts/icomoon.svg?rvphlo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+*{
     font-family:sans-serif;
+}
+
+
+body{
+
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -11,10 +47,29 @@ body{
 .header{
     display: flex;
     justify-content: space-around;
+
+    flex-wrap: nowrap;
     width:100%;
     background-color:#06c0ed;
     padding:10px;
     color:#FFFFFF;
+}
+
+.burger-button{
+    display: none;
+    width:30px;
+    height: 30px;
+    font-size:30px;
+    background-color:rgba(0, 0, 0, .5);
+    padding:10px;
+    color:#FFFFFF;
+    line-height: 30px;
+    border-radius:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
 }
 
 .doggyGram-icon{
@@ -31,8 +86,15 @@ body{
 .header-titleLetters{
     padding-left:10px;
 }
+.photo{
+    width:80px;
+    border:3px solid #000000;
+    border-radius:100%;
+    margin:10px;
+}
 .nav-list *{
     display:inline-block;
+    vertical-align: middle;
 }
 .nav-list li{
     margin:0px 10px;
@@ -127,6 +189,7 @@ body{
 .footer{
     align-self: flex-end;
     display:flex;
+    flex-wrap: wrap;
     background-color:#06c0ed;
     width:100%;
     justify-content: space-around;
@@ -161,24 +224,96 @@ body{
     margin-right:2px;
 }
 
-.photo{
-    width:80px;
-    border:3px solid #000000;
-    border-radius:100%;
+.is-active{
+    left:0;
+}
+
+.information-title,
+.contact-title{
+    border-bottom:2px solid #FFFFFF;
+
 }
 
 
 
+@media screen and (max-width:1023px){
 
 
 
+}
+@media screen and (max-width:779px){
+    .header{
+        justify-content: center;
+    }
+    .nav{
+        background-color:blue;
+        opacity: 0.9;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        position:fixed;
+        left:-100vw;
+        top:0;
+        right: 0;
+        bottom:0;
+        z-index: 1;
+        transition-duration:.5s;
+        width:100vw;
+    }
+    .is-active{
+        left:0;
+    }
+    .nav-list li{
+        text-align:center;
+        display: block;
+        margin:10px 0;
+    }
+    .contact-link{
+
+    }
+
+    .profile-link{
+        font-size:2em;
+    }
+    .photo{
+        opacity: 1;
+        display: block;
+        width:150px;
+        margin:0 auto;
+    }
+    .burger-button{
+        display: block;
+        z-index: 2;
+        right:5;
+        bottom:5;
+    }
+}
+
+@media screen and (max-width:479px){
+    .header{
+        font-size:10px;
+    }
+    .post{
+        width:300px;
+    }
+    .post-dataProfile{
+        font-size:.8em;
+    }
+    .post-containerImagePost{
+        width:200px;
+        height:300px;
+        margin:0 auto;
+
+    }
+    .post-imagePost{
+
+        width:200px;
+        height: 300px;
+    }
+    .footer{
+
+    }
 
 
 
-
-
-
-
-
-
-s
+}
